@@ -1,42 +1,43 @@
 {% extends 'lms/base.html' %}
 {% load static %}
 {% block title %} Member List {% endblock title %}
-{% block fav_icon %} <link rel="shortcut icon" href="{% static 'lms/favicon.jpg' %}" /> {% endblock fav_icon %}
+{% block fav_icon %}
+<link rel="shortcut icon" href="{% static 'lms/favicon.jpg' %}" /> {% endblock fav_icon %}
 {% block body %}
 
 <div class="row">
-        <div class="col-sm-12">
-            <h1>Listed Member</h1>
+    <div class="col-sm-12">
+        <h1>Listed Member</h1>
 
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">E-Mail</th>
-                        <th scope="col">Bio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                  {% for member in members %}
-                  <tr>
-                      <td scope="col">{{ member.id }}</td>
-                      <td>{{ member.name }}</td>
-                      <td> {{ member.e_mail }}</td>
-                      <td> {{ member.bio }}</td>
-                  </tr>
-                    {% endfor %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">E-Mail</th>
+                    <th scope="col">Bio</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for member in members %}
+                <tr>
+                    <td scope="col">{{ member.id }}</td>
+                    <td>{{ member.name }}</td>
+                    <td> {{ member.e_mail }}</td>
+                    <td> {{ member.bio }}</td>
+                </tr>
+                {% endfor %}
 
-                </tbody>
-            </table>
-        </div>
+            </tbody>
+        </table>
     </div>
+</div>
 
 
 
-                <div class="text-right">
-                    <a href="{% url 'new-member' %}" class="btn btn-light btn-sm">add member</a>
-                </div>
+<div class="text-right">
+    <a href="{% url 'new-member' %}" class="btn btn-light btn-sm">add member</a>
+</div>
 
 
 {% endblock body %}

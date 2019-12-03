@@ -2,7 +2,8 @@
 
 {% load static %}
 {% block title %} Add Books {% endblock %}
-{% block fav_icon %} <link rel="shortcut icon" href="{% static 'lms/favicon.jpg' %}" /> {% endblock fav_icon %}
+{% block fav_icon %}
+<link rel="shortcut icon" href="{% static 'lms/favicon.jpg' %}" /> {% endblock fav_icon %}
 
 {% block body %}
 
@@ -20,7 +21,7 @@
     </div>
     <div class="form-group">
         <label>Put Your Image Here </label>
-        <input name="coverimage" type="file" class="form-control" >
+        <input name="coverimage" type="file" class="form-control">
 
     </div>
     <div class="form-group">
