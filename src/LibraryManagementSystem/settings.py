@@ -25,7 +25,7 @@ SECRET_KEY = 'i-1ivc3_3(&o^t(xp#x!f6u$c5zuo*k@7t$v6eq9!^su@wq*xb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fsitlms.herokuapp.com']
 
 
 # Application definition
@@ -137,7 +137,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 
 INTERNAL_IPS = [
-    '127.0.0.1', 'fsitlms.herokuapp.com'
+    '127.0.0.1'
 ]
 
 MEDIA_ROOT="D:/PythonDjango/uploaded_files"
