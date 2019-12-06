@@ -137,7 +137,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 
 INTERNAL_IPS = [
-    '127.0.0.1', '.herokuapp.com'
+    '127.0.0.1', 'fsitlms.herokuapp.com'
 ]
 
 MEDIA_ROOT="D:/PythonDjango/uploaded_files"
