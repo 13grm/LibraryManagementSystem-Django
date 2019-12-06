@@ -85,11 +85,12 @@ WSGI_APPLICATION = 'LibraryManagementSystem.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'lms',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd99lq64bdculd3',
+        'USER': 'eiscvkceggfgcl',
+        'PASSWORD': 'eccd20ab1a502183dd1044ef2eedf923276b33ce79d40d717d9ab3385ce8676c',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
@@ -147,6 +148,6 @@ MEDIA_URL="/uploads/"
 # import dj_database_url
 # db_from_env = dj_database_url.config(conn__max_age=500)
 # DATABASES['default'].update(db_from_env)
-import dj_database_url
-
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+# import dj_database_url
+#
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
